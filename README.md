@@ -15,24 +15,35 @@ You are required to help the manager to predict the right group of the new custo
 
 
 ## DESIGN STEPS
-## STEP 1:
-Load the dataset, remove irrelevant columns (ID), handle missing values, encode categorical features using Label Encoding, and encode the target class (Segmentation).
+• Load and preprocess the dataset
+ – Import the dataset and perform preprocessing such as resizing, normalization, and labeling.
 
-## STEP 2:
-Split the dataset into training and testing sets, then normalize the input features using StandardScaler for better neural network performance.
+• Import the required libraries
+ – Import libraries like TensorFlow, Keras, NumPy, Matplotlib, and OpenCV.
 
-## STEP 3:
-Convert the scaled training and testing data into PyTorch tensors and create DataLoader objects for batch-wise training and evaluation.
+• Split the dataset into training and testing data
+ – Divide the dataset into training and testing sets for model training and evaluation.
 
-## STEP 4:
-Design a feedforward neural network with multiple fully connected layers and ReLU activation functions, ending with an output layer for multi-class classification.
+• Get the shape of the first image in the training dataset
+ – Check the dimensions of the first image in the training dataset.
 
-## STEP 5:
-Train the model using CrossEntropyLoss and Adam optimizer by performing forward propagation, loss calculation, backpropagation, and weight updates over multiple epochs.
+• Get the shape of the first image in the testing dataset
+ – Verify the dimensions of the first image in the testing dataset.
 
-## STEP 6:
-Evaluate the trained model on test data using accuracy, confusion matrix, and classification report, and perform prediction on a sample input.
+• Build and compile the CNN model
+ – Create the CNN architecture and configure it with optimizer, loss function, and metrics.
 
+• Train the model
+ – Train the model using the training dataset for multiple epochs.
+
+• Test and evaluate the model
+ – Evaluate the model performance using test data and accuracy metrics.
+
+• Predict on a single image
+ – Provide a new image to the model and obtain the predicted output.
+
+• Display the image and prediction result
+ – Display the input image along with the predicted class label and confidence score.
 
 
 
